@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-const url = 'http://localhost:8000/api/curr/'
+const url = 'https://djangoparser.herokuapp.com/api/curr/'
 
 fetch(url).then(response=>response.json())
 .then(data=>{

@@ -1,14 +1,10 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-    const url = 'https://api.thevirustracker.com/free-api?countryTotal=KG';
+    const url = 'https://djangoparser.herokuapp.com/api/posts/';
     fetch(url)
             .then(response=>response.json())
             .then(data=>{
-               const dataInfo = data.countrydata[0];
-               console.log(dataInfo);
-               const infoArray = [dataInfo.total_cases,dataInfo.total_new_cases_today,dataInfo.total_recovered,dataInfo.total_deaths];
-               const idArray = ['coronaTotal','coronaDay','coronaHealth','coronaDead'];
-               for(let i=0;i<4;i++){
-                    document.getElementById(idArray[i]).innerHTML+=`<span>${infoArray[i]}</span>`;
-               }
+              
+               console.log(data);
+               
             })
     });
