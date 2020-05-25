@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>KGNews - Курсы валют</title>
+    <script src="js/currency.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header>
+                <div class="container">
+                <div class="logo_container">
+                    
+                   <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+                </div>
+                </div>  
+              
+               <nav>
+                   <div class="container">
+                    <ul>
+                        <li><a class="nav_active" href="index.html">Новости</a></li>
+                        <li><a href="weather.html">Погода</a></li>
+                        <li><a href="currency.html">Курсы валют</a></li>
+                        <li><a href="contact.html">Связаться с нами</a></li></ul>
+                   </div>
+               </nav>
+            </header>
+            <div class="container">
+                <div id="curr_convertor">
+                    <div id="convertor">
+                        <input id="inputValueCurr" type="text" placeholder="У меня есть">
+                        <select id="selectInputValueCurr" name="" id=""></select>
+                        <img src="img/icons/exchanging.svg" alt="">
+                        <input type="text" id="outputValueCurr" disabled placeholder="Хочу приобрести">                       
+                        <select id="selectOutputValueCurr" name="" id=""></select>
+                    </div>
+                    <div id="convertorBtn">Открыть конвертор валют</div>
+                </div>
+               
+            <div id="currency_table">
+                <div class="currency_table__title">
+                    <div class="title_code">Код валюты</div>
+                    <div class="title_nameCurr">Наименование валюты</div>
+                    <div class="title_valueCurr">Курс к сому</div>
+                </div>
+              
+            </div>
+            </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="footer_container">
+                        <div class="footer_logo">
+                            <img class="footer_logo_img" src="img/logo.png" alt="">
+                            <ul>
+                                <li><img src="img/icons/pin.svg" alt=""><a href=""></a>Бишкек, Аламедин-1 </li>
+                                <li><img src="img/icons/phone (1).svg" alt=""><a href=""></a>0(550)-80-66-25</li>
+                                <li><img src="img/icons/mail.svg" alt=""><a href="">example@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_nav">
+                            <div class="footer_title">Навигация</div>
+                            <ul>
+                                <li><a href="index.html">Новости</a></li>
+                                <li><a href="weather.html">Погода</a></li>
+                                <li><a href="currency.html">Курсы валют</a></li>
+                                <li><a href="contact.html">Связаться с нами</a></li></ul>
+                        </div>
+                        <div class="recent_news">
+                            <div class="footer_title">Последние <span class="redSpan">новости</span></div>
+                            <div class="rec_new">
+                                <img src="img/2018-06-14_10-42-43_769099.jpg" alt="">
+                                <div class="rec_new_info">
+                                <h3 class="rec_new_title"> О порядке идентификации и верификации клиентов в удаленном режиме</h3>
+                                <p>2020-05-15</p>
+                            </div>
+                            </div>
+                            <div class="rec_new">
+                                <img src="img/2018-06-14_10-42-43_769099.jpg" alt="">
+                                <div class="rec_new_info">
+                                <h3 class="rec_new_title"> О порядке идентификации и верификации клиентов в удаленном режиме</h3>
+                                <p>2020-05-15</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </footer>
+            </div>
+            </body>
+            </html>

@@ -1,0 +1,59 @@
+#carrousel {
+	width:600px;
+	height:400px;
+	margin: 0 auto;
+	position:relative;
+	overflow:hidden;	
+}
+
+.slide {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:600px;
+	height:400px;
+}
+
+.carrousel-picto{
+	position:absolute;
+	left:45%;
+	bottom:50px;
+	padding:0px;
+	margin:0px;
+}
+
+.carrousel-picto li{
+	display:inline-block;
+	background-color:#ffffff;
+	border-radius:50%;
+	width:10px;
+	height:10px;
+	margin:6px;
+	cursor:pointer;
+	
+}
+.carrousel-picto span{display: block;color: transparent;}
+.carrousel-picto li:hover, .carrousel-picto li.active{background-color:#2980b9;}
+
+#carrousel-nav .prev{
+	width:54px;
+	height:54px;
+	background-image:url('https://dummyimage.com/54/ff0000/ffffff');
+	top:45%;
+	left: 10%;
+    position: absolute;
+	cursor:pointer;
+	opacity:0.8;
+}
+#carrousel-nav .next{
+	width:54px;
+	height:54px;
+	background-image:url('https://dummyimage.com/54/ff0000/ffffff');
+	top:45%;
+	right: 10%;
+    position: absolute;
+	cursor:pointer;
+	opacity:0.8;
+}
+
+#carrousel-nav .prev:hover,#carrousel-nav .next:hover {opacity: 1;}
