@@ -3,6 +3,7 @@ const url = 'https://api.thevirustracker.com/free-api?countryTotal=KG';
 fetch(url)
         .then(response=>response.json())
         .then(data=>{
+         console.log(data);
            const dataInfo = data.countrydata[0];
            console.log(dataInfo);
            const infoArray = [dataInfo.total_cases,dataInfo.total_new_cases_today,dataInfo.total_recovered,dataInfo.total_deaths];
