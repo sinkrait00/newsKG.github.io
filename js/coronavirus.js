@@ -4,11 +4,11 @@ fetch(url)
         .then(response=>response.json())
         .then(data=>{
            const dataInfo = data.countrydata[0];
-           console.log(dataInfo);
-           const infoArray = [dataInfo.total_cases,dataInfo.total_new_cases_today,dataInfo.total_recovered,dataInfo.total_deaths];
-           const idArray = ['coronaTotal','coronaDay','coronaHealth','coronaDead'];
-           for(let i=0;i<4;i++){
-                document.getElementById(idArray[i]).innerHTML+=`<span>${infoArray[i]}</span>`;
-           }
+           console.log(data);
+        const infoArray = [dataInfo.total_cases,dataInfo.total_new_cases_today,dataInfo.total_recovered,dataInfo.total_deaths];
+          const idArray = ['coronaTotal','coronaDay','coronaHealth','coronaDead'];
+          for(let i=0;i<4;i++){
+            document.getElementById(idArray[i]).innerHTML+=`<span>${infoArray[i]}</span>`;
+        }
         })
 });
